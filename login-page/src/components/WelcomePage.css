@@ -1,0 +1,75 @@
+/* WelcomePage.css */
+.welcome-page {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    background-image: url('../assets/background.jpeg'); /* Your existing background image */
+    background-size: cover; /* Cover the whole page */
+    background-position: center; /* Center the background image */
+}
+
+h1 {
+    font-size: 2.5rem; /* Increased size for the h1 */
+    margin-bottom: 40px; /* Adjust the space below the h1 to push down the container */
+    color: rgba(212, 8, 8, 0.97); /* Black color with transparency (70% opacity) */
+    text-align: center; /* Center align the heading */
+}
+
+.glass-container {
+    background: rgba(255, 255, 255, 0.1); /* White background with transparency */
+    border-radius: 15px; /* Rounded corners */
+    backdrop-filter: blur(10px); /* Blur effect for the background */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    padding: 20px; /* Reduced padding around the content */
+    text-align: center; /* Center align text */
+    width: 90%; /* Make the container responsive */
+    max-width: 500px; /* Limit the width of the glass container */
+    max-height: 40vh; /* Set a maximum height for scrolling */
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+/* Custom scrollbar styles */
+.glass-container::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+.glass-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.2); /* Track color */
+    border-radius: 10px; /* Round the edges of the track */
+}
+
+.glass-container::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5); /* Thumb color */
+    border-radius: 10px; /* Round the edges of the thumb */
+}
+
+.glass-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.7); /* Thumb color on hover */
+}
+
+.text-content {
+    color: black; /* Change text color to black */
+    overflow-y: auto; /* Allow scrolling inside the text container */
+    line-height: 1.5; /* Increase line height for readability */
+    white-space: pre-wrap; /* Preserve whitespace and allow wrapping */
+    word-wrap: break-word; /* Break long words to prevent overflow */
+    font-size: 1.2rem; /* Adjust font size for better readability */
+}
+
+.try-button {
+    background-color: #4CAF50; /* Green background for the button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners for button */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Padding for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition effect for background color */
+    margin-top: 20px; /* Spacing between text and button */
+}
+
+.try-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}

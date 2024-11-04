@@ -1,0 +1,187 @@
+/* Body background */
+body {
+  background-color: #000000;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Account creation container styling */
+.account-creation-container {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  padding: 15px; /* Reduced padding for a smaller look */
+  border-radius: 8px;
+  max-width: 460px;
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Form row styling for alignment */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Form group styling with bottom margin */
+.form-group {
+  margin-bottom: 10px; /* Reduced margin for a more compact look */
+  flex: 1;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px; /* Reduced spacing below labels */
+  color: #cccccc;
+}
+
+/* Input styling */
+input {
+  width: 100%;
+  padding: 6px; /* Reduced padding inside inputs */
+  border: 1px solid #444444;
+  border-radius: 4px;
+  background-color: #333333;
+  color: #ffffff;
+}
+
+/* OTP and CAPTCHA container styling */
+.otp-container, .captcha-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+button {
+  padding: 6px 10px; /* Reduced padding for buttons */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Button colors */
+.otp-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.submit-button, .create-account-button {
+  background-color: #007BFF;
+  color: white;
+  width: 100%;
+  margin-top: 8px; /* Reduced top margin for compact look */
+}
+
+.create-account-button {
+  background-color: #5A9DF8;
+}
+
+.signup-prompt {
+  text-align: center;
+  margin-top: 10px; /* Reduced top margin */
+  color: #cccccc;
+}
+
+.login-button {
+  background: none;
+  color: #007BFF;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* CAPTCHA and refresh button styling */
+.captcha-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.captcha {
+  font-weight: bold;
+  padding: 6px;
+  background-color: #333;
+  color: #ffffff;
+  border-radius: 4px;
+  min-width: 70px; /* Decreased width slightly */
+  text-align: center;
+}
+
+.refresh-captcha-button {
+  background-color: #FFA500;
+  color: white;
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #1e1e1e;
+  color: #ffffff;
+  padding: 15px; /* Reduced padding for modal content */
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content h3 {
+  margin: 0 0 10px; /* Reduced margin */
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.modal-content button {
+  padding: 8px 12px; /* Reduced padding for modal buttons */
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 8px; /* Reduced spacing */
+}
+
+.success-message {
+  color: green;
+  margin-bottom: 8px; /* Reduced spacing */
+}
+
+/* Warning message styling */
+.password-requirements {
+  font-size: 12px;
+  color: #ffcc00;
+  margin-top: 5px;
+}
+.account-creation-container h2 {
+  color: #e6e4ec; /* Text color */
+  text-align: center;
+  
+
+}
